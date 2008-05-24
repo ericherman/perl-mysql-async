@@ -1,3 +1,4 @@
+#examle of use
 {{{
 #!/usr/bin/perl -w
 use strict;
