@@ -1,0 +1,6 @@
+#required modules
+
+= Required Modules =
+
+  * *Event::Lib*
+  * *Digest::SHA* or *Digest::SHA1*
