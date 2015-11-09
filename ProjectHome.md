@@ -1,0 +1,3 @@
+Most MySQL drivers (and database drivers in general) are _synchronous_, i.e. the execution of a script is blocked until having connected to the database or having obtained the result of a query. This is often unacceptable for highload services, since one probably wants the script do something useful while MySQL server is executing a long query. So **perl-mysql-async** is developed to make _asynchronous_ requests to the server: a script submits a query, specifies a callback for the result and continues executing in the **libevent** loop; when the result of the query is completely read from the server, the specified callback is called with the result as a parameter.
+
+New versions of MySQL 4.1 protocol and newer versions are supported.
